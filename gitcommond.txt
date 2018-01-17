@@ -1,7 +1,17 @@
+安装git完成后:
+git config --global user.name "你的github用户名"  //使用global是为了在以后创建git仓库的时候，不需要再配置用户信息
+git config --global user.email "你的邮箱地址"
+ls -al ~/.ssh 查看是否已有密钥文件 没有则生成 mkdir .ssh
+ssh-keygen -t rsa -C “你的邮箱地址” 在.ssh  会生成公私密钥文件 提示你输入passphrase（没有输入则默认为没有密码，
+   届时任何人都可在你创建的公开的仓库上push东西，所以最好需要自己简单易记的密码） 
+   打开id_rsa.pub 文件  	  复制文本
+在你的github -> Settings -> SSH and GPG keys -> new SSH key  title自定义  文本框粘贴公钥文本完成
+
+
+配置公私密钥后且在github 配置key完成后在本地新建文件:
 git clone git@github.com:gitfuhang/hflhtig.git //复制你ssh的仓库链接
 git status //显示你的文件是红色的
-git add. //全部添加到暂存区
+git add. //全部添加到暂存区  .替换为文件名.后缀 则上传指定文件
 git commit -m “提交的备注信息”
 git push origin master  //将所有文件提交到远端仓库了
 git push -u origin master //仓库是空的，且第一次提交
-git config --global credential.helper 'cache --timeout=3600'
