@@ -1,5 +1,5 @@
-git clone git@github.com:gitfuhang/hflhtig.git
-git status
+git clone git@github.com:gitfuhang/hflhtig.git //复制你ssh的仓库链接
+git status //显示你的文件是红色的
 git add. //全部添加到暂存区
 git commit -m “提交的备注信息”
 git push origin master  //将所有文件提交到远端仓库了
