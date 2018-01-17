@@ -1,0 +1,11 @@
+.headerDiv{
+	
+}
+.navbar-default{background-color: #fff;border-bottom: 0;border: 0;margin: 2rem 0 2rem;border-color:aliceblue;}
+.navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.active>a:focus, .navbar-default .navbar-nav>li.active>a:hover {color: #fff;background-color: #0086e5;border-radius: 4px;}
+.navbar-default .navbar-nav>li>a:hover{color:#fff;background-color:transparent;-webkit-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear}
+.navbar-default .navbar-nav>li>a{color:#777}
+.navbar-default .navbar-nav>li>a:hover{color:#fff;background-color:transparent;-webkit-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear}
+.navbar-brand{padding:0}.nav>li{border-radius:4px;font-size:16px;margin-left:4px;margin-right:4px}
+.navbar-nav>li>a{padding-top:6px;padding-bottom:6px;margin-left:0;margin-right:0}
+.nav>li:hover{background-color:#0086e5;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s}

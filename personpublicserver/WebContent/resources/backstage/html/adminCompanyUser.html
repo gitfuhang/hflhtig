@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>员工信息</title>
+	<meta name="renderer" content="webkit">	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+	<meta name="apple-mobile-web-app-capable" content="yes">	
+	<meta name="format-detection" content="telephone=no">	
+	<link rel="stylesheet" type="text/css" href="../../common/layui/css/layui.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../common/css/global.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/common.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/personal.css" media="all">
+</head>
+<body>
+<section class="larry-grid">
+ <div class="larry-personal">
+	<blockquote class="layui-elem-quote news_search">
+		<div class="layui-inline">
+		    <div class="layui-input-inline">
+		    	<input type="text" value="" id="userName" placeholder="请输入员工姓名" class="layui-input search_input">
+		    </div>
+		    <a class="layui-btn search_btn">查询</a>
+		</div>
+		<div class="layui-inline">
+			<a class="layui-btn layui-btn-normal CompanyAdd_btn">添加用户</a>
+		</div>	
+		
+		<div class="layui-inline">
+			<a class="layui-btn layui-btn-danger batchDel">批量删除</a>
+		</div>
+		<div class="layui-inline">
+			<div class="layui-form-mid layui-word-aux"></div>
+		</div>
+	</blockquote>
+	<div class="layui-form news_list" >
+	  	<table class="layui-table" id="tableData" >
+		    <thead >
+				<tr>
+					<!--<th><input type="checkbox" name="" lay-skin="primary" lay-filter="allChoose" id="allChoose"></th>-->
+					<th>员工姓名</th>
+					<th>员工性别</th>
+					<th>员工年龄</th>
+					<th>所在部门</th>
+					<th>所在职位</th>
+					<th>工作年限</th>
+					<th>薪酬待遇</th>
+					<th>是否缴纳5险1金</th>
+					<th>员工类别</th>
+					<th style="width:10%">操作</th>
+				</tr> 
+		    </thead>
+		    <tbody class="news_content" style="white-space:nowrap;"></tbody>
+		</table>
+	</div>
+	<div id="page"></div>
+ </div>
+</section>
+<script type="text/javascript" src="../../common/layui/layui.js"></script>
+<script type="text/javascript" src="../js/adminCompanyUser.js?ver=1"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
