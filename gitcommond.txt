@@ -4,3 +4,4 @@ git add. //全部添加到暂存区
 git commit -m “提交的备注信息”
 git push origin master  //将所有文件提交到远端仓库了
 git push -u origin master //仓库是空的，且第一次提交
+git config --global credential.helper 'cache --timeout=3600'
